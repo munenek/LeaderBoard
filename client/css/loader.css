@@ -1,0 +1,68 @@
+#loading {
+    width: 100%;
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loading-text {
+    margin: 10px 0px;
+    width: 60%;
+    word-wrap: break-word;
+}
+.loading-text p {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(100, 16, 89);
+}
+.dotsContainer{
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  #dot1,
+  #dot2,
+  #dot3 {
+    width: 20px;
+    height: 20px;
+    background: rgb(100, 16, 89);
+    border-radius: 50%;
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    animation: typing 1s infinite;
+  }
+
+  #dot1 {
+    animation-delay: 1s;
+  }
+
+  #dot2 {
+    animation-delay: 0.5s;
+  }
+
+  #dot3 {
+    animation-delay: 0.8s;
+  }
+
+@keyframes typing {
+  0% {
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  50% {
+    transform: translateY(-5px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  100% {
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+}
+.dontShow {
+    display: none !important;
+}
